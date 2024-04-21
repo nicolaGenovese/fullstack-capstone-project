@@ -17,7 +17,7 @@ router.get('/', async (req, res, next) => {
     } catch (e) {
         logger.console.error('oops something went wrong', e);
         next(e);
-    }
+    };
 });
 
 // Get a single gift by ID
